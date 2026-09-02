@@ -30,8 +30,16 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# env files
+.env.local
+.env*.local
+
+# Migration artifacts (sensitive / generated)
+migration/url-mapping.json
+migration/public-id-mapping.json
+migration/migration-report.json
+migration/.tmp/
+migration/content-export/
 
 # vercel
 .vercel

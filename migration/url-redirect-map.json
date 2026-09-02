@@ -1,0 +1,15 @@
+{
+  "/": "/",
+  "/about-us/": "/#about",
+  "/about-us": "/#about",
+  "/rooms/": "/#rooms",
+  "/rooms": "/#rooms",
+  "/activities/": "/#activities",
+  "/activities": "/#activities",
+  "/terms-conditions/": "/#terms",
+  "/terms-conditions": "/#terms",
+  "/hello-world/": "/",
+  "/hello-world": "/",
+  "/category/uncategorized/": "/",
+  "/category/uncategorized": "/"
+}
