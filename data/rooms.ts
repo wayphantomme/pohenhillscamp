@@ -1,6 +1,6 @@
 /**
  * Room data extracted from WordPress Elementor page content.
- * Source: Home page (ID 20) — SSA booking types included.
+ * Source: Home page (ID 20)
  */
 
 export interface RoomAmenity {
@@ -13,8 +13,6 @@ export interface Room {
   unitCount: number;
   priceIDR: number;
   priceLabel: string;
-  ssaTypes: number[];
-  ssaLabel: number;
   images: string[]; // WordPress original URLs (replaced with Cloudinary post-migration)
   size: string;
   bedSize: string;
@@ -23,7 +21,6 @@ export interface Room {
   bathroom: string;
   amenities: string[];
   inclusions: string[];
-  note: string;
   bookingUrl: string;
 }
 
@@ -37,8 +34,6 @@ export const ROOMS: Room[] = [
     unitCount: 1,
     priceIDR: 2000000,
     priceLabel: "IDR 2.000.000 / Tent / Night",
-    ssaTypes: [1],
-    ssaLabel: 1,
     images: [
       `${WP_BASE}/MLG00999-1024x675.jpg`,
       `${WP_BASE}/MLG00938-1024x683.jpg`,
@@ -64,7 +59,6 @@ export const ROOMS: Room[] = [
       "Free Entry to The Blooms Garden",
       "Free Entry to Ulun Danu Beratan",
     ],
-    note: "*notes: availability hanya untuk display kamar yang ready, mohon booking via WhatsApp. Terima kasih.",
     bookingUrl: WA,
   },
   {
@@ -73,8 +67,6 @@ export const ROOMS: Room[] = [
     unitCount: 2,
     priceIDR: 1400000,
     priceLabel: "IDR 1.400.000 / Tent / Night",
-    ssaTypes: [2, 3],
-    ssaLabel: 2,
     images: [
       `${WP_BASE}/MLG00806-1024x682.jpg`,
       `${WP_BASE}/MLG00794-1024x683.jpg`,
@@ -98,7 +90,6 @@ export const ROOMS: Room[] = [
       "Free Entry to The Blooms Garden",
       "Free Entry to Ulun Danu Beratan",
     ],
-    note: "*notes: availability hanya untuk display kamar yang ready, mohon booking via WhatsApp. Terima kasih.",
     bookingUrl: WA,
   },
   {
@@ -107,8 +98,6 @@ export const ROOMS: Room[] = [
     unitCount: 3,
     priceIDR: 800000,
     priceLabel: "IDR 800.000 / Tent / Night",
-    ssaTypes: [4, 5],
-    ssaLabel: 3,
     images: [
       `${WP_BASE}/MLG00895-1-1024x683.jpg`,
       `${WP_BASE}/MLG00879-1024x683.jpg`,
@@ -132,7 +121,6 @@ export const ROOMS: Room[] = [
       "BBQ Package",
       "Free Entry to The Blooms Garden",
     ],
-    note: "*notes: availability hanya untuk display kamar yang ready, mohon booking via WhatsApp. Terima kasih.",
     bookingUrl: WA,
   },
   {
@@ -141,8 +129,6 @@ export const ROOMS: Room[] = [
     unitCount: 4,
     priceIDR: 800000,
     priceLabel: "IDR 800.000 / Tent / Night",
-    ssaTypes: [7, 8, 9, 10],
-    ssaLabel: 4,
     images: [
       `${WP_BASE}/MLG01176-1024x683.jpg`,
       `${WP_BASE}/MLG01205-1024x683.jpg`,
@@ -169,7 +155,6 @@ export const ROOMS: Room[] = [
       "BBQ Package",
       "Free Entry to The Blooms Garden",
     ],
-    note: "*notes: availability hanya untuk display kamar yang ready, mohon booking via WhatsApp. Terima kasih.",
     bookingUrl: WA,
   },
   {
@@ -178,8 +163,6 @@ export const ROOMS: Room[] = [
     unitCount: 3,
     priceIDR: 700000,
     priceLabel: "IDR 700.000 / Tent / Night",
-    ssaTypes: [11, 12, 13],
-    ssaLabel: 5,
     images: [
       `${WP_BASE}/MLG01224-1024x683.jpg`,
       `${WP_BASE}/MLG01217-1024x683.jpg`,
@@ -204,7 +187,6 @@ export const ROOMS: Room[] = [
     inclusions: [
       "Free Entry to The Blooms Garden",
     ],
-    note: "*notes: availability hanya untuk display kamar yang ready, mohon booking via WhatsApp. Terima kasih.",
     bookingUrl: WA,
   },
   {
@@ -213,8 +195,6 @@ export const ROOMS: Room[] = [
     unitCount: 3,
     priceIDR: 600000,
     priceLabel: "IDR 600.000 / Tent / Night",
-    ssaTypes: [14, 15, 16],
-    ssaLabel: 6,
     images: [
       `${WP_BASE}/MLG00091-1024x682.jpg`,
       `${WP_BASE}/MLG01272-1024x683.jpg`,
@@ -237,7 +217,6 @@ export const ROOMS: Room[] = [
     inclusions: [
       "Free Entry to The Blooms Garden",
     ],
-    note: "*notes: availability hanya untuk display kamar yang ready, mohon booking via WhatsApp. Terima kasih.",
     bookingUrl: WA,
   },
   {
@@ -246,8 +225,6 @@ export const ROOMS: Room[] = [
     unitCount: 3,
     priceIDR: 600000,
     priceLabel: "IDR 600.000 / Tent / Night",
-    ssaTypes: [17, 18],
-    ssaLabel: 7,
     images: [
       `${WP_BASE}/MLG00100-1024x683.jpg`,
       `${WP_BASE}/MLG01128-1024x683.jpg`,
@@ -268,7 +245,6 @@ export const ROOMS: Room[] = [
     inclusions: [
       "Free Entry to The Blooms Garden",
     ],
-    note: "*notes: availability hanya untuk display kamar yang ready, mohon booking via WhatsApp. Terima kasih.",
     bookingUrl: WA,
   },
   {
@@ -277,8 +253,6 @@ export const ROOMS: Room[] = [
     unitCount: 2,
     priceIDR: 500000,
     priceLabel: "IDR 500.000 / Tent / Night",
-    ssaTypes: [19, 20],
-    ssaLabel: 8,
     images: [
       `${WP_BASE}/MLG00104-1-1024x678.jpg`,
       `${WP_BASE}/MLG01056-1024x683.jpg`,
@@ -299,7 +273,6 @@ export const ROOMS: Room[] = [
     inclusions: [
       "Free Entry to The Blooms Garden",
     ],
-    note: "*notes: availability hanya untuk display kamar yang ready, mohon booking via WhatsApp. Terima kasih.",
     bookingUrl: WA,
   },
   {
@@ -308,8 +281,6 @@ export const ROOMS: Room[] = [
     unitCount: 2,
     priceIDR: 450000,
     priceLabel: "IDR 450.000 / Tent / Night",
-    ssaTypes: [21, 22],
-    ssaLabel: 9,
     images: [
       `${WP_BASE}/MLG00104-2-1024x678.jpg`,
       `${WP_BASE}/MLG01076-1024x683.jpg`,
@@ -332,7 +303,6 @@ export const ROOMS: Room[] = [
     inclusions: [
       "Free Entry to The Blooms Garden",
     ],
-    note: "*notes: availability hanya untuk display kamar yang ready, mohon booking via WhatsApp. Terima kasih.",
     bookingUrl: WA,
   },
 ];
@@ -340,6 +310,7 @@ export const ROOMS: Room[] = [
 export const CAMPING_TENT = {
   id: "camping-tent",
   name: "Camping Tent",
+  unitCount: 10,
   pricing: [
     { capacity: "1–2 pax", priceIDR: 170000, priceLabel: "IDR 170.000" },
     { capacity: "3–4 pax", priceIDR: 290000, priceLabel: "IDR 290.000" },

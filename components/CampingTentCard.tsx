@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { resolveImageUrl } from "@/lib/cloudinary";
+import AvailabilityDisplay from "./AvailabilityDisplay";
 import type { CAMPING_TENT } from "@/data/rooms";
 
 type CampingTentData = typeof CAMPING_TENT;
@@ -11,8 +12,8 @@ interface Props {
 export default function CampingTentCard({ data }: Props) {
   return (
     <article className="ph-camping" aria-labelledby="camping-heading">
-      <div className="ph-camping__grid">
-        {/* Image */}
+      {/* Top row: image (left) + availability calendar (right) — mirrors RoomCard */}
+      <div className="ph-room-card__top">
         <div className="ph-camping__img-wrap">
           <Image
             src={resolveImageUrl(data.image, { width: 800, height: 533 })}
@@ -22,65 +23,59 @@ export default function CampingTentCard({ data }: Props) {
             style={{ objectFit: "cover" }}
           />
         </div>
+        <div className="ph-room-card__availability-wrap">
+          <AvailabilityDisplay
+            unitCount={data.unitCount}
+            roomName="Camping Tent"
+            bookingUrl={data.bookingUrl}
+          />
+        </div>
+      </div>
 
-        {/* Info */}
-        <div className="ph-camping__info">
-          <div className="ph-camping__pricing">
-            <p className="ph-camping__pricing-label">
-              <strong>CAMPING</strong>
-            </p>
-            <ul>
-              {data.pricing.map((p) => (
-                <li key={p.capacity}>
-                  <strong>Capacity {p.capacity}:</strong> {p.priceLabel}
-                </li>
-              ))}
-            </ul>
-          </div>
+      {/* Bottom row: full-width camping details */}
+      <div className="ph-camping__info">
+        {/* Pricing */}
+        <div className="ph-camping__pricing">
+          <p><strong>CAMPING</strong></p>
+          <ul>
+            {data.pricing.map((p) => (
+              <li key={p.capacity}>
+                <strong>Capacity {p.capacity}:</strong> {p.priceLabel}
+              </li>
+            ))}
+          </ul>
+        </div>
 
-          <div className="ph-camping__facilities">
-            <p>
-              <strong>FACILITIES</strong>
-            </p>
-            <ul>
-              {data.facilities.map((f) => (
-                <li key={f}>{f}</li>
-              ))}
-            </ul>
-          </div>
+        {/* Facilities */}
+        <div className="ph-camping__facilities">
+          <p><strong>FACILITIES</strong></p>
+          <ul>
+            {data.facilities.map((f) => (
+              <li key={f}>{f}</li>
+            ))}
+          </ul>
+        </div>
 
-          <div className="ph-camping__rules">
-            <p>
-              <strong>CAMPER RULES</strong>
-            </p>
-            <ul>
-              {data.rules.map((r) => (
-                <li key={r}>{r}</li>
-              ))}
-            </ul>
-          </div>
+        {/* Rules */}
+        <div className="ph-camping__rules">
+          <p><strong>CAMPER RULES</strong></p>
+          <ul>
+            {data.rules.map((r) => (
+              <li key={r}>{r}</li>
+            ))}
+          </ul>
+        </div>
 
-          <div className="ph-camping__addons">
-            <p>
-              <strong>ADD ON:</strong>
-            </p>
-            <ul>
-              {data.addOns.map((a) => (
-                <li key={a.item}>
-                  {a.item} — IDR {a.priceIDR.toLocaleString("id-ID")}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <a
-            href={data.bookingUrl}
-            className="ph-btn ph-btn--primary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Book Here
-          </a>
+        {/* Add-ons */}
+        <div className="ph-camping__addons">
+          <p><strong>ADD ON:</strong></p>
+          <ul>
+            {data.addOns.map((a) => (
+              <li key={a.item}>
+                {a.item} — IDR {a.priceIDR.toLocaleString("id-ID")}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </article>

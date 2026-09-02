@@ -10,6 +10,13 @@ export const SITE = {
     "Pohen Hills Camp is located in the Pohen forest area and passes through The Blooms Garden area. We provide accommodation with different experiences. The location of Pohen Hills is at the top of the hill so the view from the room is a beautiful view of the mountains, forests and sunrise. Our glamping takes the concept of camping combined with warmness so that you can feel nature with the comfort of home and many facilities so you don't feel bored when stayed.",
   url: "https://pohenhillscamp.com",
   whatsapp: "https://wa.wizard.id/ddaefb",
+  phone: "+62 821-4614-3140",
+  phoneHref: "tel:+628214614314",
+  email: "pohenhills357@gmail.com",
+  address: "Br Batusesa, Baturiti, Tabanan, Bali 82191",
+  googleMapsUrl: "https://maps.app.goo.gl/pohen-hills",
+  instagram: "https://www.instagram.com/pohenhillscamp",
+  tiktok: "https://www.tiktok.com/@pohenhillscamp",
   googlePlaceId: "ChIJo6YP7g-J0S0RrWyp_1uQWIo",
   googleReviewUrl:
     "https://search.google.com/local/reviews?placeid=ChIJo6YP7g-J0S0RrWyp_1uQWIo",
@@ -26,5 +33,5 @@ export const NAV_ITEMS = [
   { label: "Rooms", href: "/#rooms" },
   { label: "Activities", href: "/#activities" },
   { label: "Terms", href: "/#terms" },
-  { label: "Contact", href: SITE.whatsapp, external: true },
+  { label: "Book Your Camp", href: "https://linktr.ee/pohenhillscamp", external: true },
 ];
