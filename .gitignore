@@ -48,5 +48,4 @@ migration/content-export/
 *.tsbuildinfo
 next-env.d.ts
 
-# Auto-generated screenshots
-/public/screenshots/
+
