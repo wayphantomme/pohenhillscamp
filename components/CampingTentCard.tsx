@@ -11,7 +11,7 @@ interface Props {
 
 export default function CampingTentCard({ data }: Props) {
   return (
-    <article className="ph-camping" aria-labelledby="camping-heading">
+    <article id={data.id} className="ph-camping" aria-labelledby="camping-heading">
       {/* Top row: image (left) + availability calendar (right) — mirrors RoomCard */}
       <div className="ph-room-card__top">
         <div className="ph-camping__img-wrap">

@@ -47,3 +47,6 @@ migration/content-export/
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Auto-generated screenshots
+/public/screenshots/
