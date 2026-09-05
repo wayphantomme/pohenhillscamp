@@ -3,7 +3,7 @@ import { SITE } from "@/data/site";
 import { resolveImageUrl } from "@/lib/cloudinary";
 
 const LOGO_WHITE_URL =
-  "https://moccasin-wombat-987069.hostingersite.com/wp-content/uploads/2025/06/2.-Putih.JPG-scaled.png";
+  "https://res.cloudinary.com/zktumplt/image/upload/wordpress/images/2025/06/2.-Putih.JPG-scaled.png";
 
 const COMPANY_LINKS = [
   { label: "Careers", href: "#" },

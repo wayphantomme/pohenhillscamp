@@ -57,19 +57,19 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "https://moccasin-wombat-987069.hostingersite.com/wp-content/uploads/2025/06/cropped-Pohen-Hills-Logo-Circle-Big-32x32.png",
+        url: "/logo-favicon.png",
         sizes: "32x32",
         type: "image/png",
       },
       {
-        url: "https://moccasin-wombat-987069.hostingersite.com/wp-content/uploads/2025/06/cropped-Pohen-Hills-Logo-Circle-Big-192x192.png",
+        url: "/logo-favicon.png",
         sizes: "192x192",
         type: "image/png",
       },
     ],
     apple: [
       {
-        url: "https://moccasin-wombat-987069.hostingersite.com/wp-content/uploads/2025/06/cropped-Pohen-Hills-Logo-Circle-Big-180x180.png",
+        url: "/logo-favicon.png",
         sizes: "180x180",
         type: "image/png",
       },

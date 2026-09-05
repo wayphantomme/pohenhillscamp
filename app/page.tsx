@@ -6,7 +6,6 @@ import ActivitiesSection from "@/components/ActivitiesSection";
 import TermsSection from "@/components/TermsSection";
 import ContactSection from "@/components/ContactSection";
 import { SITE } from "@/data/site";
-import { resolveVideoUrl } from "@/lib/cloudinary";
 
 export const metadata: Metadata = {
   title: `${SITE.name} — Glamping & Camping in Bali`,
@@ -18,11 +17,11 @@ export const metadata: Metadata = {
 };
 
 const WP_VIDEO_URL =
-  "https://moccasin-wombat-987069.hostingersite.com/wp-content/uploads/2025/06/POHEN-HILLS-2025-TEASER.mp4";
+  "https://res.cloudinary.com/zktumplt/video/upload/wordpress/videos/2025/06/POHEN-HILLS-2025-TEASER.mp4";
 
 export default function HomePage() {
-  // Resolve at build time (Server Component) — no fs in client bundle
-  const heroVideoUrl = resolveVideoUrl(WP_VIDEO_URL);
+  // Video already on Cloudinary — use directly
+  const heroVideoUrl = WP_VIDEO_URL;
 
   return (
     <>

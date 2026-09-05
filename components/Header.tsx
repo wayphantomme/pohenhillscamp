@@ -7,9 +7,9 @@ import { SITE, NAV_ITEMS } from "@/data/site";
 import { resolveImageUrlClient } from "@/lib/cloudinary-client";
 
 const LOGO_URL =
-  "https://moccasin-wombat-987069.hostingersite.com/wp-content/uploads/2025/06/Pohen-Hills-Logo-Circle-Big.png";
+  "https://res.cloudinary.com/zktumplt/image/upload/wordpress/images/2025/06/Pohen-Hills-Logo-Circle-Big.png";
 const LOGO_WHITE_URL =
-  "https://moccasin-wombat-987069.hostingersite.com/wp-content/uploads/2025/06/2.-Putih.JPG-scaled.png";
+  "https://res.cloudinary.com/zktumplt/image/upload/wordpress/images/2025/06/2.-Putih.JPG-scaled.png";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
